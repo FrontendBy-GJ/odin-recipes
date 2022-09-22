@@ -1,0 +1,92 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: system-ui, sans-serif;
+  line-height: 1.1;
+  margin: 10px;
+}
+
+.grid {
+  background-color: rgb(249, 207, 123);
+  display: grid;
+  grid-template-columns: minmax(300px, 1fr);
+  grid-template-areas:
+    "header"
+    "info"
+    "ingredients"
+    "steps";
+  gap: 20px;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+@media only screen and (min-width: 1000px) {
+  .grid {
+    grid-template-columns: minmax(auto-fit, 1fr);
+    grid-template-areas:
+      "header ingredients"
+      "info info"
+      "steps steps";
+    gap: 10px;
+    margin: 20px;
+    line-height: 1.6;
+  }
+}
+
+.header {
+  color: white;
+  text-shadow: 0 0 10px black;
+}
+.header h1,
+.info h3 {
+  margin-bottom: 10px;
+}
+.header img {
+  width: 100%;
+  height: 470px;
+  object-fit: contain;
+}
+.info {
+  grid-area: info;
+}
+.header,
+.info {
+  text-align: center;
+}
+.info p {
+  font-style: italic;
+}
+.ingredients {
+  grid-area: ingredients;
+  margin: auto;
+}
+.steps {
+  grid-area: steps;
+}
+
+h3 {
+  text-transform: uppercase;
+  text-align: center;
+  background-color: #fff;
+  padding: 10px;
+}
+ul,
+ol {
+  padding: 20px 40px;
+  margin: 0;
+}
+li + li {
+  margin-top: 20px;
+}
+.ingredients ul {
+  list-style-type: none;
+}
+.ingredients,
+.steps {
+  border: 1px solid #000;
+  background-color: antiquewhite;
+}

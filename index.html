@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Odin Recipes</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        font-family: system-ui, sans-serif;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(249, 207, 123);
+      }
+      ul {
+        list-style-type: none;
+        margin: inherit;
+        padding: 10px;
+      }
+      .recipes-list {
+        background-color: antiquewhite;
+        border-radius: 10px;
+        text-align: center;
+        min-width: 200px;
+        padding: 20px 60px;
+      }
+      h1 {
+        color: white;
+        text-shadow: 0 0 8px black;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+      }
+      li + li {
+        margin-top: 20px;
+      }
+      li a:hover {
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="recipes-list">
+      <h1>Odin Recipes</h1>
+
+      <ul id="links">
+        <li>
+          <a href="./recipes/airfryer-chickenthighs-potatoes.html"
+            >Air Fryer Chicken Thighs and Potatoes</a
+          >
+        </li>
+        <li>
+          <a href="./recipes/airfryer-blueberry-hand-pies.html"
+            >Air Fryer Blueberry Hand Pies</a
+          >
+        </li>
+        <li>
+          <a href="./recipes/airfryer-potato-wedges.html"
+            >Air Fryer Potato Wedges</a
+          >
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>
